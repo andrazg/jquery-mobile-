@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head><title>Moja aplikacija</title>
+<head>
+<link rel="stylesheet" href="themes/dado.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+
+
+	<!-- to je prvi page-->
+	<div data-role="page" id="page1" data-theme-="a">
+
+		<div data-role="header">
+			<h1 style="position="center";"> Prva jQuery aplikacija </h2>
+		</div>
+
+		<div data-role="main" class="ui-content">
+		<h1>Vsebina prve strani</h1>
+		<div data-role="navbar">
+		<ul>
+		<li><a href="#page1" data-icon="home">Domov</a></li>
+		<li><a href="#page2" data-icon="phone">Kontakt</a></li>
+		<li><a href="#page3" data-icon="info">Povezava</a></li>
+		</ul>
+		</div>
+		</div>
+
+		<div data-role="footer">
+			<h2>&copy; Grudwa 2015</h2>
+		</div>
+
+	</div>
+	<!-- to je prvi page-->
+
+	<!-- to je drugi page-->
+	<div data-role="page" id="page2" data-theme-="a">
+
+		<div data-role="header">
+			<h1 style="position="center";"> Prva jQuery aplikacija </h2>
+		</div>
+		<div data-role="main" class="ui-content">
+		<h1>Kontakt</h1>
+		<div data-role="navbar">
+		<ul style="margin-bottom:20px;">
+		<li><a href="#page1" data-icon="home">Iskanje</a></li>
+		<li><a href="#page2" data-icon="phone">Kontakt</a></li>
+		<li><a href="#page3" data-icon="info">Povezava</a></li>
+		</ul>
+		<form name="moja">	
+		<h2>Poslji sporocilo<h2/>
+		<textarea name="kontakt" id="kontakt" placeholder="Napisi sporocilo"></textarea>
+		<input type="submit" name="potrdi" id="potrdi" value="Send" onsubmit="setTimeout('myForm.reset()',1000);"/>
+		<input type="reset" value="Clear"/>
+		</form>
+		</div>
+	</div>
+		<div data-role="footer">
+			<h2>&copy; Grudwa 2015</h2>
+		</div>
+
+	</div>
+	<!-- to je drugi page-->
+	
+	<!-- to je tretji page-->
+		<div data-role="page" id="page3" data-theme-="a">
+
+		<div data-role="header">
+			<h1 style="position="center";"> Prva jQuery aplikacija </h2>
+		</div>
+		<div data-role="main" class="ui-content">
+		<h1>Kontakt</h1>
+		<div data-role="navbar">
+		<ul>
+		<li><a href="#page1" data-icon="home">Iskanje</a></li>
+		<li><a href="#page2" data-icon="phone">Kontakt</a></li>
+		<li><a href="#page3" data-icon="info">Povezava</a></li>
+		</ul>
+		</div>
+	</div>
+		<div data-role="footer">
+			<h2>&copy; Grudwa 2015</h2>
+		</div>
+
+	</div>
+	<!-- to je tretji page-->
+
+
+
+
+</body>
+</hmtl>
+
+
