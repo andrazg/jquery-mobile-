@@ -744,4 +744,181 @@ button[disabled],
 	outline-width: 1px;
 	outline-style: auto;
 }
+
+
+
+.mojgumb {
+	font-size:22px;
+	font-family:Arial;
+	font-weight:normal;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	padding:9px 18px;
+	text-decoration:none;
+	background:-moz-linear-gradient( center top, #ededed 47%, #dfdfdf 58% );
+	background:-ms-linear-gradient( top, #ededed 47%, #dfdfdf 58% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(47%, #ededed), color-stop(58%, #dfdfdf) );
+	background-color:#ededed;
+	color:#777777;
+	display:inline-block;
+	text-shadow:1px 1px 22px #ffffff;
+ 	-webkit-box-shadow:inset 1px 1px 0px -4px #ffffff;
+ 	-moz-box-shadow:inset 1px 1px 0px -4px #ffffff;
+ 	box-shadow:inset 1px 1px 0px -4px #ffffff;
+}.mojgumb:hover {
+	background:-moz-linear-gradient( center top, #dfdfdf 47%, #ededed 58% );
+	background:-ms-linear-gradient( top, #dfdfdf 47%, #ededed 58% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(47%, #dfdfdf), color-stop(58%, #ededed) );
+	background-color:#dfdfdf;
+}.mojgumb:active {
+	position:relative;
+	top:1px;
+}
+
+#dado:hover{
+background-color:red
+}
+.premik{
+left:-50%;
+
+}
+
+
+
+
+body {
+  background:#1a2125;
+  color:aliceblue;
+  font-family:'Open Sans', sans-serif;
+  font-weight:300;
+  margin:0 auto;
+  
+  /* Click-and-drag or text-selection doesn't make sense. */
+  /* Or long-tap on webkit phones. */
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+ul {
+  /* We don't need actual bullets */
+  list-style:none;
+}
+
+li {
+  float:left; /* So that they wrap */
+  height:150px;
+  width:150px;
+  margin:5px; /* The gaps between them */
+  
+  text-transform:capitalize;
+  
+  /*transition may need prefixes in some browsers */
+  -webkit-transition:.2s -webkit-transform, 1s opacity;
+  -moz-transition:   .2s -moz-transform, 1s opacity;
+  -o-transition:     .2s -o-transform, 1s opacity;
+  transition:        .2s transform, 1s opacity;
+  
+  /*transform*/
+  -webkit-transform:perspective(800px);
+  -moz-transform:perspective(800px);
+  -ms-transform:perspective(800px);
+  -o-transform:perspective(800px);
+  transform:perspective(800px);
+  
+  /*transform-style*/
+  -webkit-transform-style:preserve-3d;
+  -moz-transform-style:preserve-3d;
+  -ms-transform-style:preserve-3d;
+  -o-transform-style:preserve-3d;
+  transform-style:preserve-3d;
+  -webkit-transform-origin-x:50%;
+  -webkit-transform-origin-y:50%;
+  
+  text-align:center;
+  cursor:pointer;
+}
+
+/* When moused over, rotate it! */
+li:active {
+  /*transform*/
+  -webkit-transform:perspective(800px) rotate3d(1, 0, 0, 17deg);
+  -moz-transform:perspective(800px) rotate3d(1, 0, 0, 17deg);
+  -ms-transform:perspective(800px) rotate3d(1, 0, 0, 17deg);
+  -o-transform:perspective(800px) rotate3d(1, 0, 0, 17deg);
+  transform:perspective(800px) rotate3d(1, 0, 0, 17deg);
+}
+
+/* It'd be neat to have double-width tiles */
+.span2{
+  width:310px;
+}
+
+/* Icon and number */
+ i{
+  font-size:60px;
+  margin:35px 0 0;
+  color:white;
+}
+
+/* Text label on tiles */
+li span{
+  position:absolute;
+  bottom:8px;
+  left:8px;
+}
+
+/* Specialized background colours */
+.games{
+  background:rgb(0, 192, 0);
+  font-size:30px;
+  font-color:#ffffff;
+}
+.phone{
+  background:rgb(27, 161, 226);
+    font-size:30px;
+}
+.messages{
+  background:rgb(240, 163, 10);
+    font-size:30px;
+}
+.contacts{
+  background:rgb(119, 158, 203);
+    font-size:30px;
+}
+.internet{
+  background:rgb(0, 80, 239);
+    font-size:30px;
+}
+.maps{
+  background:rgb(119, 221, 119);
+    font-size:30px;
+}
+.search{
+  background:rgb(130, 111, 214);
+    font-size:30px;
+}
+.settings{
+  background:rgb(100, 118, 135);
+    font-size:30px;
+}
+.email{
+  background:rgb(255, 105, 97);
+    font-size:30px;
+}
+.photos{
+  background:rgb(162, 0, 37);
+    font-size:30px;
+}
+
+
+
+        
 			

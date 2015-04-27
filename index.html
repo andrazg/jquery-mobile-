@@ -4,9 +4,25 @@
 <head>
 <link rel="stylesheet" href="themes/dado.css" />
 <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" href="themes/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="themes/font/css/font-awesome.min.css">
+<script src="themes/jquery-1.11.1.min.js"></script>
+<script src="themes/jquery.mobile-1.4.5.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+<script>
+$(document).on("pagecreate","#page1",function(){
+$(".mojgumb").hide().delay(1000).fadeIn(600);
+$("#broken").hide().delay(1500).fadeIn(600);
+
+$("#broken").click(function(){
+		document.location.href="#page2"
+		});	
+$(".premik").hide().delay(2000).fadeIn(3000);
+});
+</script>
+
 
 </head>
 <body>
@@ -16,21 +32,16 @@
 	<div data-role="page" id="page1" data-theme-="a">
 
 		<div data-role="header">
-			<h1 style="position="center";"> Prva jQuery aplikacija </h2>
+			<h1 style="position="center";"> My 1 app </h2>
 		</div>
 
 		<div data-role="main" class="ui-content">
-		<h1>Vsebina prve strani</h1>
-		<div data-role="navbar">
-		<ul>
-		<li><a href="#page1" data-icon="home">Domov</a></li>
-		<li><a href="#page2" data-icon="phone">Kontakt</a></li>
-		<li><a href="#page3" data-icon="info">Povezava</a></li>
-		</ul>
+		<div class="premik"><img src="themes/images/grudwa.png"/></div>
+		<a class="mojgumb" href="#page3" data-transition="slide">Vstopi</a>
+		<div id="broken"><p id="dado" style="margin-top:50px width=10px height=5px">Ne klikaj</p></div>
 		</div>
-		</div>
-
-		<div data-role="footer">
+		
+		<div id="naslovni" data-role="footer">
 			<h2>&copy; Grudwa 2015</h2>
 		</div>
 
@@ -40,53 +51,32 @@
 	<!-- to je drugi page-->
 	<div data-role="page" id="page2" data-theme-="a">
 
-		<div data-role="header">
-			<h1 style="position="center";"> Prva jQuery aplikacija </h2>
-		</div>
+		
 		<div data-role="main" class="ui-content">
-		<h1>Kontakt</h1>
-		<div data-role="navbar">
-		<ul style="margin-bottom:20px;">
-		<li><a href="#page1" data-icon="home">Iskanje</a></li>
-		<li><a href="#page2" data-icon="phone">Kontakt</a></li>
-		<li><a href="#page3" data-icon="info">Povezava</a></li>
-		</ul>
-		<form name="moja">	
-		<h2>Poslji sporocilo<h2/>
-		<textarea name="kontakt" id="kontakt" placeholder="Napisi sporocilo"></textarea>
-		<input type="submit" name="potrdi" id="potrdi" value="Send" onsubmit="setTimeout('myForm.reset()',1000);"/>
-		<input type="reset" value="Clear"/>
-		</form>
+		<img src="themes/images/broken.jpg"/>
 		</div>
-	</div>
-		<div data-role="footer">
-			<h2>&copy; Grudwa 2015</h2>
-		</div>
-
 	</div>
 	<!-- to je drugi page-->
 	
 	<!-- to je tretji page-->
 		<div data-role="page" id="page3" data-theme-="a">
-
-		<div data-role="header">
-			<h1 style="position="center";"> Prva jQuery aplikacija </h2>
-		</div>
 		<div data-role="main" class="ui-content">
-		<h1>Kontakt</h1>
-		<div data-role="navbar">
-		<ul>
-		<li><a href="#page1" data-icon="home">Iskanje</a></li>
-		<li><a href="#page2" data-icon="phone">Kontakt</a></li>
-		<li><a href="#page3" data-icon="info">Povezava</a></li>
-		</ul>
+		</header>
+    <ul>
+        <li class="phone"><i class="fa fa-phone"> </i><span>Telefon</span></li>
+        <li class="messages"><i class="fa fa-comments"> 2</i><span>Sporocila</span></li>
+        <li class="contacts span2"><i class="fa fa-user"></i><span>Kontakti</span></li>
+        <li class="internet"><i class="fa fa-globe"></i><span>internet</span></li>
+        <li class="games span2"><i class="fa fa-gamepad"></i><span>igre</span></li>
+        <li class="maps"><i class="fa fa-map-marker"></i><span>mape</span></li>
+        <li class="search"><i class="fa fa-search"></i><span>isci</span></li>
+        <li class="email"><i class="fa fa-envelope">&thinsp;58</i><span>email</span></li>
+        <li class="photos"><i class="fa fa-instagram"></i><span>fotografije</span></li>
+        <li class="settings"><i class="fa fa-gears"></i><span>nastavitve</span></li>
+    </ul>
+</main>
 		</div>
-	</div>
-		<div data-role="footer">
-			<h2>&copy; Grudwa 2015</h2>
 		</div>
-
-	</div>
 	<!-- to je tretji page-->
 
 
