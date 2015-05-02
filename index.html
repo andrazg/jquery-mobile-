@@ -1,88 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html>
-<head><title>Moja aplikacija</title>
 <head>
-<link rel="stylesheet" href="themes/dado.css" />
-<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-<link rel="stylesheet" href="themes/jquery.mobile-1.4.5.min.css" />
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="themes/font/css/font-awesome.min.css">
-<script src="themes/jquery-1.11.1.min.js"></script>
-<script src="themes/jquery.mobile-1.4.5.min.js"></script>
-<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<title>Moj podjetnik - Video promocija, Video produkcija, Izdelava spletnih strani, Izdelava spletnih trgovin</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <link rel="stylesheet" href="resursi/grudwa.css" />
+  <link rel="stylesheet" href="resursi/jquery.mobile.icons.min.css" />
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
-<script>
-$(document).on("pagecreate","#page1",function(){
-$(".mojgumb").hide().delay(1000).fadeIn(600);
-$("#broken").hide().delay(1500).fadeIn(600);
 
-$("#broken").click(function(){
-		document.location.href="#page2"
-		});	
-$(".premik").hide().delay(2000).fadeIn(3000);
-});
+
+<!--jQuery Magic ///////////////////////////////-->
+<script type="text/javascript">
+$(document).ready(function(){
+      $("#misel").hide().fadeIn(1000).delay(2000).fadeTo(800,0);
+      $("#prijem").delay(4000).animate({left:-30}, 800).animate({top:-10}, 500).animate({top:180}, 500).animate({left:-250},1000);
+      $("#mp").hide().delay(6000).show().animate({top:70}, 400);
+      $("#okvir").hide()
+                .show()
+                .delay(1500)
+                .animate({top:-180}, 1500).delay(2300).animate({top:0}, 500);
+      $("#link").click(function(){
+    document.location.href="strani.html"
+    });
+
+    });
 </script>
+<!--jQuery Magic ///////////////////////////////-->
 
 
 </head>
 <body>
 
+<!--////////////////////////////////////////////-->
 
-	<!-- to je prvi page-->
-	<div data-role="page" id="page1" data-theme-="a">
+<div data-role="page" id="page1" data-theme-="a" data-transition="pop">
+  
 
-		<div data-role="header">
-			<h1 style="position="center";"> My 1 app </h2>
-		</div>
+  <div data-role="main" class="ui-content">
 
-		<div data-role="main" class="ui-content">
-		<div class="premik"><img src="themes/images/grudwa.png"/></div>
-		<a class="mojgumb" href="#page3" data-transition="slide">Vstopi</a>
-		<div id="broken"><p id="dado" style="margin-top:50px width=10px height=5px">Ne klikaj</p></div>
-		</div>
-		
-		<div id="naslovni" data-role="footer">
-			<h2>&copy; Grudwa 2015</h2>
-		</div>
+    <div id="okvir">
+    <img src="resursi/okvir.png"/>
+  </div>
 
-	</div>
-	<!-- to je prvi page-->
+  <div>
+    <p id="misel">VAM DELA SPLET PREGLAVICE?</p>
+  <div>
 
-	<!-- to je drugi page-->
-	<div data-role="page" id="page2" data-theme-="a">
+    <div id="prijem">
+    <img  src="resursi/prijem.png"/>
+   </div>
 
-		
-		<div data-role="main" class="ui-content">
-		<img src="themes/images/broken.jpg"/>
-		</div>
-	</div>
-	<!-- to je drugi page-->
-	
-	<!-- to je tretji page-->
-		<div data-role="page" id="page3" data-theme-="a">
-		<div data-role="main" class="ui-content">
-		</header>
-    <ul>
-        <li class="phone"><i class="fa fa-phone"> </i><span>Telefon</span></li>
-        <li class="messages"><i class="fa fa-comments"> 2</i><span>Sporocila</span></li>
-        <li class="contacts span2"><i class="fa fa-user"></i><span>Kontakti</span></li>
-        <li class="internet"><i class="fa fa-globe"></i><span>internet</span></li>
-        <li class="games span2"><i class="fa fa-gamepad"></i><span>igre</span></li>
-        <li class="maps"><i class="fa fa-map-marker"></i><span>mape</span></li>
-        <li class="search"><i class="fa fa-search"></i><span>isci</span></li>
-        <li class="email"><i class="fa fa-envelope">&thinsp;58</i><span>email</span></li>
-        <li class="photos"><i class="fa fa-instagram"></i><span>fotografije</span></li>
-        <li class="settings"><i class="fa fa-gears"></i><span>nastavitve</span></li>
-    </ul>
-</main>
-		</div>
-		</div>
-	<!-- to je tretji page-->
+ <div id="mp">
+    <a href="#page2" id="link"><img src="resursi/mp.png"/></a>
+</div>
+  </div>
+</div> 
 
 
 
 
 </body>
-</hmtl>
-
-
+</html>
